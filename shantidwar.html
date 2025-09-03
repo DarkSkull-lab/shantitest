@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shantidwar - Gateway to Peace</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #d4c4b7, #a88c72);
+      color: #333;
+      line-height: 1.7;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    .content-box {
+      max-width: 1200px;
+      margin: auto;
+      background: #fdfcfb;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    hr {
+      margin: 40px auto;
+      width: 80%;
+      border: none;
+      height: 2px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, transparent, #FFD580, transparent);
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 15px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1100px;
+      background: rgba(40, 30, 20, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      color: #f9f3ee;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f9f3ee;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover { color: #FFD580; }
+
+    /* Hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span {
+      width: 25px; height: 3px; background: #f9f3ee;
+      border-radius: 2px; transition: all 0.3s ease;
+    }
+    .nav-links { display: flex; }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 70px; right: 20px;
+        background: rgba(40, 30, 20, 0.95);
+        flex-direction: column;
+        width: 220px; padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        transform: translateY(-20px);
+        opacity: 0; pointer-events: none;
+        transition: all 0.3s ease;
+      }
+      .nav-links.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
+      .nav-links li { margin: 12px 0; }
+      .hamburger { display: flex; }
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+    .hero.show { opacity: 1; transform: translateY(0); }
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      color: #3B2C1A;
+      margin-bottom: 15px;
+      text-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex; justify-content: center; gap: 25px;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 300px;
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      opacity: 0; transform: translateY(50px);
+    }
+    .card.show { opacity: 1; transform: translateY(0); transition: opacity 1s ease, transform 1s ease; }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 213, 128, 0.5), 0 0 50px rgba(139, 94, 60, 0.25);
+    }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #8B5E3C;
+      margin-bottom: 12px;
+    }
+    .card p { font-size: 0.95rem; color: #555; margin-bottom: 20px; line-height: 1.6; }
+
+    /* Glowing Buttons */
+    .card button {
+      padding: 12px 22px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #8B5E3C, #FFD580, #8B5E3C);
+      background-size: 300% 300%;
+      color: white; font-weight: 600;
+      cursor: pointer; font-size: 0.9rem;
+      animation: glowShift 4s linear infinite;
+      box-shadow: 0 0 12px rgba(255, 213, 128, 0.7), inset 0 0 12px rgba(255, 213, 128, 0.4);
+      transition: transform 0.3s ease;
+    }
+    .card button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 18px rgba(255, 213, 128, 0.9), inset 0 0 18px rgba(255, 213, 128, 0.6);
+    }
+    @keyframes glowShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      opacity: 0; transform: translateY(40px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    section.show { opacity: 1; transform: translateY(0); }
+    section h2 {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      color: #3B2C1A;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section p { font-size: 1.05rem; color: #555; line-height: 1.8; }
+
+    footer {
+      text-align: center; padding: 25px;
+      background: #2c1e12;
+      color: transparent; font-size: 0;
+      border-radius: 0 0 18px 18px;
+    }
+
+    /* 📱 Mobile adjustments */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; padding: 0 10px; }
+      .cards { gap: 20px; }
+      .card { width: 90%; padding: 25px 15px; }
+      nav { padding: 12px 20px; }
+      nav .logo { font-size: 1.4rem; }
+      .card button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Shantidwar</div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <h1>🌸 Welcome to Shantidwar 🌸</h1>
+      <h1>Shantikunj</h1>
+      <p>A spiritual gateway where wisdom meets modern expression.</p>
+    </section>
+    <hr>
+
+    <!-- Cards -->
+     <center>
+     <h1>🌿Our creations🌿</h1>
+     </center>
+    <section class="cards">
+      <div class="card">
+        <h3>Yagyopathy</h3>
+        <p>Explore the ancient wisdom of Yagya practices redefined for modern life.</p>
+  <button onclick="location.href='yagyopathy.html'">Open Website</button>
+      </div>
+      <div class="card">
+        <h3>Scientific Spirituality</h3>
+        <p>Bridging science and spirituality to awaken higher consciousness in life.</p>
+       <button onclick="location.href='scientificsprituality.html'">Open Website</button>
+      </div>
+      <div class="card">
+        <h3>------</h3>
+        <p>______________________</p>
+         <button onclick="location.href='----.html'">Open Website</button>
+      </div>
+      <div class="card">
+        <h3>------</h3>
+        <p>______________________</p>
+        <button onclick="location.href='-----.html'">Open Website</button>
+      </div>
+    </section>
+    <hr>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Shantidwar</h2>
+      <p></p>
+    </section>
+    <hr>
+
+    <footer></footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const elements = document.querySelectorAll('.hero, .card, section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('show'); });
+    }, { threshold: 0.2 });
+    elements.forEach(el => observer.observe(el));
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
