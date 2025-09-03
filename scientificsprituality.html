@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Spirituality</title>
+  <style>
+    body {
+      background-color: #fffded;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      background-color: #ffcf91;
+      color: #9e0303;
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 1.5rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 3px solid #ff6f00;
+      margin: 1.5rem 0;
+    }
+
+    h2 {
+      background-color: #ffca91;
+      color: #b80909;
+      font-size: 24px;
+      padding: 0.8rem;
+      border-left: 8px solid #b80909;
+      margin: 2rem 0 1rem;
+    }
+
+    h3 {
+      color: #b80909;
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem;
+    }
+
+    p {
+      font-size: 24px;
+      color: #ca4949;
+      margin: 0 0 1.2rem;
+      text-align: justify;
+    }
+
+    .highlight {
+      border-left: 6px solid #ff6f00;
+      padding-left: 1rem;
+      margin: 1.2rem 0;
+      font-size: 24px;
+      color: #850909;
+      background-color: #ffefd3;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      padding: 0 1rem;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 2px solid #ff6f00;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .lang {
+      display: none;
+    }
+
+    .lang.active {
+      display: block;
+    }
+
+    .orange-button {
+      background-color: #f28c38;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      margin: 0.5rem;
+    }
+
+    .orange-button:hover {
+      background-color: #e07b30;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+
+    blockquote {
+      color: #0000ff;
+      font-size: 24px;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border-left: 5px solid #ff6f00;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+        flex-direction: column;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p, .highlight, blockquote {
+        font-size: 1rem;
+      }
+      .lang-switcher {
+        position: static;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    }
+       .conclusion {
+      background: #fff4e3;
+      border-left: 6px solid #ff6f00;
+      padding: 1rem;
+      margin: 2rem 0;
+      font-size: 22px;
+      color: #7b0404;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switcher">
+      <select id="languageSelect" onchange="switchLanguage(this.value)">
+        <option value="en" selected>English</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+    </div>
+    
+    <h1>
+      <img src="https://play-lh.googleusercontent.com/KL4RaeG0P-Z29pn3pqhq3ZMfoR0_nkdfLnlpmEsVw42woWTtT_CfT5JA2_musl2e02XJ" alt="Logo" style="width: 50px; height: 50px; border-radius: 8px;">
+      Science and Spirituality (विज्ञान और अध्यात्म)
+    </h1>
+    <hr>
+    <img src="https://static.toiimg.com/thumb/msid-104782915,width-1280,height-720,imgsize-1731218,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Science and Spirituality">
+    
+    <div id="lang-en" class="lang active">
+      <blockquote>"Watson once asked the world-renowned scientist Paul Dirac - 'In which field of research will the biggest inventions take place in the coming century?' Dirac replied - 'I think the biggest scientific experiments will take place in the spiritual field. Then all the scientists of the world will start studying the powers of spiritual knowledge in their laboratories. When that day comes, the world will see more progress in a single generation than the progress made in many previous generations.'"</blockquote>
+      <h2>What is Science? 🔬</h2>
+      <p>Science is a structured and logical approach to understanding the natural world. It is based on careful observation, experimentation, and the analysis of evidence. Science explains how things work — from the behavior of atoms to the movement of planets — and helps us discover the principles that govern the universe.</p>
+      <p class="highlight">Science is not just a subject — it is a way of thinking that encourages curiosity, evidence-based learning, and logical understanding.</p>
+      <p>Scientific progress has played a vital role in shaping the modern world. It has led to advancements in medicine, technology, agriculture, communication, and transportation. Everyday things like electricity, clean drinking water, mobile phones, and the internet exist today because of science.</p>
+      <p>The scientific method includes observing a phenomenon, forming a hypothesis, conducting experiments, collecting data, and drawing conclusions. This process ensures that knowledge is reliable and repeatable.</p>
+      <p>One of the strengths of science is its ability to grow and adapt. As better tools and methods are developed, earlier theories can be refined or replaced. For example, the belief that Earth was the center of the universe was corrected through scientific discovery.</p>
+      <p class="highlight">🔄 Science is always evolving — what we know today may improve tomorrow with new discoveries.</p>
+      <p>Science plays a key role in solving major global challenges 🌍 such as climate change, public health, and energy sustainability. It provides tools and insights that improve life and protect the planet.</p>
+      <p>In education, science encourages critical thinking, curiosity, and creativity. It promotes the habit of questioning and testing ideas with evidence. These skills help individuals make informed and wise decisions.</p>
+      <p>While science focuses on physical reality, it does not answer all questions — such as those about meaning, purpose, or inner peace. These are explored by spirituality and philosophy. Both science and spirituality can coexist and complement each other in understanding life from different angles.</p>
+      <p>In essence, science is a continuous journey of discovery. It expands knowledge, improves lives, and deepens our understanding of both the universe and ourselves.</p>
+      <h2>What is Spirituality? 🪔</h2>
+      <p>Spirituality is the silent whisper within us that calls us to look beyond the surface of life. It is not a doctrine, a religion, or a set of rules. It is an inner experience—something deeply personal, quiet, and profound. It begins when a person starts to feel that there is more to life than the material world. When the noise of the outside fades, and you start listening to your inner world, that is where spirituality begins. It is the art of finding peace, purpose, and presence in every moment.</p>
+      <p>At its core, spirituality is about connection—connection with the self, with others, with nature, and with something greater than us, often called the divine, the universe, or the higher self. This connection brings a sense of wholeness. People who are spiritual do not necessarily follow a religion, but they feel deeply rooted in something timeless. Spirituality doesn’t require rituals or symbols—it simply requires awareness and sincerity. It’s not about how much you know, but how deeply you feel.</p>
+      <p>For many, spirituality begins with a question: “Who am I?” or “Why am I here?” These questions arise not just from the mind, but from the heart. In moments of joy, pain, silence, or awe, we feel the presence of something larger than our individual selves. It could be the peace of early morning, the beauty of a sunset 🌞, or the quiet stillness after tears. These moments are spiritual, not because they are dramatic, but because they touch a deeper layer of our existence.</p>
+      <p>Spirituality teaches us to slow down and observe—to breathe consciously, to feel the present fully, to notice life’s subtle rhythms. It invites us to turn inward, not to escape the world, but to understand it more clearly. When we live spiritually, we no longer chase happiness; instead, we uncover the joy that already lives within us. Life becomes less about getting more and more about being fully present with what is.</p>
+      <p>A spiritual person tends to become more compassionate, patient, and understanding. They begin to see the same divine light in others that they recognize within themselves. Hatred, ego, and anger slowly dissolve, not because they are forced out, but because they are no longer needed. What replaces them is silence, gratitude, humility, and deep love for life in all its forms.</p>
+      <p>Even during suffering, spirituality does not deny the pain. Rather, it gives us the strength to accept it, to learn from it, and to transform it. It turns wounds into wisdom and scars into symbols of survival. In this way, spirituality is not a luxury but a necessity for a meaningful life. It grounds us in a world that is often chaotic and fast-moving. It reminds us that beneath all labels, appearances, and identities, we are pure consciousness—aware, awake, and whole. 🌸</p>
+      <h2>Science in Action: A Story and an Experiment ⚗️🧪</h2>
+      <p><strong>🔬 Story – The Discovery of Penicillin:</strong> In 1928, a scientist named Alexander Fleming returned from a vacation and noticed something strange in his lab. A mold had accidentally grown in one of his petri dishes, and it had killed the surrounding bacteria. What seemed like a mistake turned out to be a miracle. This mold was <em>Penicillium</em>, and it led to the development of penicillin — the world’s first antibiotic. It went on to save millions of lives. Fleming's discovery teaches us that even accidents, when observed with a curious mind, can lead to groundbreaking science. 🧫🌍</p>
+      <p><strong>🧪 Simple Experiment – Water Evaporation:</strong> Take two cups of water. Place one in sunlight and the other in a dark, cool place. After a few hours, you’ll notice that the cup in the sun has less water. Why? Because heat speeds up <em>evaporation</em> — the process of turning liquid into vapor. This small experiment shows how sunlight affects water cycles, helping us understand larger processes like weather and climate. ☀️💧</p>
+      <hr>
+      <h2>Spirituality in Practice: A Story and a Practice ✨🌿</h2>
+      <p><strong>🌸 Story – Buddha and the Angry Man:</strong> Once, an angry man came to insult the Buddha. But the Buddha remained calm and asked, “If someone offers you a gift and you refuse it, who does the gift belong to?” The man replied, “To the giver.” Buddha said, “Exactly. I do not accept your anger — so it stays with you.” This simple yet profound story teaches how spiritual awareness gives us the power to respond with peace instead of reacting with hate. 🕊️🙏</p>
+      <p><strong>🧘‍♂️ Simple Practice – Breathing with the Gayatri Mantra:</strong> Sit comfortably in a quiet place. Close your eyes gently. As you inhale slowly, mentally say the first part of the Gayatri Mantra: <em>"Om Bhur Bhuvaḥ Swaḥ"</em>. As you exhale slowly, continue with the next part: <em>"Tat Savitur Vareṇyaṃ"</em>. Repeat this with each breath: inhale with the first half, exhale with the second. Let the rhythm of your breath guide the chant. 🧘‍♀️🌬️🌼<br>This practice brings calmness, focus, and spiritual alignment. Even 5 minutes can help quiet the mind and open the heart to inner peace and clarity.</p>
+      <h2>The Connection Between Science and Spirituality 🔬✨🕊️</h2>
+      <p>At first glance, science and spirituality may seem like two separate paths — one rooted in logic and the other in inner experience. But when we look deeper, we find they are not enemies, but companions. Science asks <strong>“How?”</strong>, while spirituality asks <strong>“Why?”</strong>. Science explores the outer universe; spirituality explores the inner one. 🌌🔍</p>
+      <p>Modern physics shows us that everything in the universe is connected — from stars to subatomic particles. Spirituality too teaches oneness, that beneath all diversity there is a single underlying truth. Both paths, though different in method, lead to the understanding of reality and our place in it.</p>
+      <p>Scientific studies have even shown how meditation and prayer—spiritual practices—can improve brain health, reduce stress, and bring emotional balance. Similarly, scientific breakthroughs often arise from deep silence, reflection, and inspiration—qualities nourished by spiritual practice.</p>
+      <p>⚖️ A balanced life embraces both: the clarity of science and the depth of spirituality. Together, they guide us toward wisdom, compassion, and a deeper connection with life and the universe.</p>
+      <h2>💡 The Unbreakable Spirit of Thomas Alva Edison 🌟</h2>
+      <p>On this very day in 1880, Thomas Alva Edison was granted the patent for the electric bulb — a discovery that continues to illuminate our world. Yet, behind this invention lies a tale of relentless perseverance. Edison failed over a thousand times while trying to perfect the light bulb, but he never gave up.</p>
+      <p>As a child, Edison was labeled mentally slow and was removed from school. However, through self-learning and extraordinary dedication, he went on to invent not just the bulb, but thousands of life-altering devices that made modern life more convenient.</p>
+      <p>It is said that Edison experimented with over 2,000 materials to find the perfect filament for the bulb. When a journalist once asked him how it felt to fail a thousand times, Edison calmly responded, “I did not fail a thousand times. I found a thousand ways that won't work.”</p>
+      <p class="highlight">In the above Thomas Alva Edison story, we can see both science and spirituality. In science we can see the invention of Thomas Alva Edison, where he failed more than 1000 times, and the one successful attempt was the invention of science.<br>Now talking about spirituality, Thomas Alva Edison failed 1000 times, but he did not give up, he kept trying until he succeeded. That was his spirituality. Even when a journalist asked him about his 1000 failed attempts, he said that he did not fail 1000 times, rather he made 1000 inventions that did not work.<br>Another story of spirituality of Thomas Alva Edison is from his school days, when he was expelled from the school and they sent a letter to his mother saying that her son is a fool and useless, when his mother read that letter she cried and when Thomas Alva saw his mother crying he asked his mother why is she crying and his mother did not believe him, he said that he is so intelligent that no teacher in the school can match his level, such was the spirituality of his mother, if his mother had told the truth he would not have been as great as he is and maybe we would not have found the bulb till now, this is the power of spirituality.</p>
+      <h2>🧬 Scientific Spirituality 🔱</h2>
+      <h3>🌐 Dr. Howard Steingeil's Research on Gayatri Mantra</h3>
+      <p>American scientist <strong>Dr. Howard Steingeil</strong> conducted in-depth research in his physiology lab on various chants, hymns, and invocations from across the world. After thorough testing, he declared the <strong>Gayatri Mantra</strong> as the most effective and powerful prayer in the world.</p>
+      <p>He discovered that the Gayatri Mantra generates <strong>110,000 sound waves per second</strong>, which is the highest among all sacred chants.</p>
+      <p>Dr. Steingeil also concluded that the unique combination of <strong>frequencies</strong> in the mantra has the potential to activate <strong>special spiritual powers</strong> within an individual.</p>
+      <img id="myImage" src="https://i.ibb.co/998SrLK8/devtaeng.jpg" alt="Deity" style="width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+      <div class="button-container">
+        <button class="orange-button" onclick="document.getElementById('myImage').src='https://i.ibb.co/998SrLK8/devtaeng.jpg'">Previous</button>
+        <button class="orange-button" onclick="document.getElementById('myImage').src='https://i.ibb.co/hR7svPyt/engone.jpg'">Next</button>
+      </div>
+      <h2>🕉️ Scientific Spirituality</h2>
+      <img src="https://i.ibb.co/Kz8DYKdr/tragisgas.jpg" alt="Scientific Spirituality">
+       <div class="conclusion">
+        <h2>Conclusion</h2>
+        🌟 <strong>Conclusion:</strong> The union of science and spirituality teaches us that truth is both external and internal. Science reveals the outer world, while spirituality reveals the inner world. Together, they form a complete path for human growth — guiding us toward wisdom, compassion, and harmony with the universe. 🌍✨
+      </div>
+      <hr>
+    </div>
+
+    <div id="lang-hi" class="lang">
+      <blockquote>"रोजर वाटसन ने एक बार विश्वविख्यात वैज्ञानिक पॉल डिरॉक से प्रश्न किया - 'आगामी शताब्दी में अनुसंधान के किस क्षेत्र में सबसे बड़ा आविष्कार होगा?' डिरॉक ने उत्तर दिया- 'मेरा विचार है कि अध्यात्म-क्षेत्र में ही सबसे बड़े वैज्ञानिक प्रयोग होंगे। तब विश्व के सारे वैज्ञानिक अपनी प्रयोगशालाओं में आध्यात्मिक ज्ञान की शक्तियों का अध्ययन प्रारंभ कर देंगे। जब वह दिन आएगा, तब एक ही पीढ़ी में पिछली कई पीढ़ियों में हुई उन्नति की अपेक्षा कहीं अधिक उन्नति संसार देखेगा।'"</blockquote>
+      <h2>विज्ञान क्या है? 🔬</h2>
+      <p>विज्ञान प्राकृतिक दुनिया को समझने का एक संगठित और तार्किक तरीका है। यह सावधानीपूर्वक निरीक्षण, प्रयोग और प्रमाणों के विश्लेषण पर आधारित होता है। विज्ञान समझाता है कि चीजें कैसे काम करती हैं — परमाणुओं के व्यवहार से लेकर ग्रहों की गति तक — और यह हमें ब्रह्मांड को नियंत्रित करने वाले सिद्धांतों की खोज में मदद करता है।</p>
+      <p class="highlight">विज्ञान केवल एक विषय नहीं है — यह सोचने का एक तरीका है जो जिज्ञासा, प्रमाण-आधारित शिक्षा और तार्किक समझ को बढ़ावा देता है।</p>
+      <p>विज्ञान ने आधुनिक दुनिया को आकार देने में महत्वपूर्ण भूमिका निभाई है। इसने चिकित्सा, प्रौद्योगिकी, कृषि, संचार और परिवहन में कई प्रगति की है। बिजली, स्वच्छ पानी, मोबाइल फोन और इंटरनेट जैसी रोज़मर्रा की चीजें विज्ञान की वजह से ही संभव हैं।</p>
+      <p>वैज्ञानिक विधि में किसी घटना का अवलोकन करना, परिकल्पना बनाना, प्रयोग करना, डेटा एकत्र करना और निष्कर्ष निकालना शामिल है। यह प्रक्रिया ज्ञान को विश्वसनीय और दोहराने योग्य बनाती है।</p>
+      <p>विज्ञान की एक ताकत इसकी विकासशील प्रकृति है। जैसे-जैसे बेहतर उपकरण और विधियाँ विकसित होती हैं, पुराने सिद्धांतों को परिष्कृत या बदला जा सकता है। उदाहरण के लिए, पहले यह माना जाता था कि पृथ्वी ब्रह्मांड का केंद्र है, लेकिन वैज्ञानिक खोजों से यह सिद्धांत बदल गया।</p>
+      <p class="highlight">🔄 विज्ञान हमेशा विकसित होता रहता है — जो हम आज जानते हैं, वह कल नई खोजों से बेहतर हो सकता है।</p>
+      <p>विज्ञान जलवायु परिवर्तन, सार्वजनिक स्वास्थ्य और ऊर्जा स्थिरता जैसी वैश्विक समस्याओं को हल करने में महत्वपूर्ण भूमिका निभाता है 🌍। यह जीवन को बेहतर बनाने और पृथ्वी की रक्षा करने के लिए उपकरण और समझ प्रदान करता है।</p>
+      <p>शिक्षा में विज्ञान आलोचनात्मक सोच, जिज्ञासा और रचनात्मकता को बढ़ावा देता है। यह विचारों को प्रश्न करने और प्रमाणों से परखने की आदत सिखाता है, जिससे व्यक्ति बेहतर निर्णय ले पाते हैं।</p>
+      <p>जहाँ विज्ञान भौतिक वास्तविकता पर केंद्रित है, वहीं यह जीवन के अर्थ, उद्देश्य या आत्मिक शांति जैसे प्रश्नों का उत्तर नहीं दे सकता। ये प्रश्न आध्यात्म और दर्शन के क्षेत्र में आते हैं। दोनों मिलकर जीवन की गहराई को समझने में सहायता कर सकते हैं।</p>
+      <p>सार में, विज्ञान एक सतत खोज की यात्रा है। यह ज्ञान को बढ़ाता है, जीवन को बेहतर बनाता है और ब्रह्मांड व स्वयं को समझने की गहराई को बढ़ाता है।</p>
+      <h2>आध्यात्म क्या है? 🪔</h2>
+      <p>आध्यात्मिकता हमारे भीतर की वह मौन पुकार है जो हमें जीवन के सतही स्तर से ऊपर उठकर देखने के लिए प्रेरित करती है। यह कोई धर्म, पंथ या नियमों की श्रृंखला नहीं है। यह एक आंतरिक अनुभव है—कुछ बहुत ही व्यक्तिगत, शांत और गहरा। आध्यात्मिकता तब आरंभ होती है जब कोई व्यक्ति यह महसूस करता है कि जीवन केवल भौतिक सुखों और उपलब्धियों तक सीमित नहीं है। जब बाहरी दुनिया का शोर थोड़ा शांत हो जाता है और हम अपने भीतर झांकना शुरू करते हैं, वहीं से आध्यात्मिकता की यात्रा शुरू होती है।</p>
+      <p>आध्यात्मिकता का मूल भाव है जुड़ाव—अपने आप से, दूसरों से, प्रकृति से और उस महान सत्ता से जिसे हम ईश्वर, ब्रह्मांड या उच्च आत्मा कहते हैं। यह जुड़ाव हमें एकता का अनुभव कराता है। आध्यात्मिक व्यक्ति जरूरी नहीं कि किसी धर्म को माने, पर वे जीवन में एक अदृश्य गहराई महसूस करते हैं। आध्यात्मिकता के लिए किसी विशेष अनुष्ठान या प्रतीक की आवश्यकता नहीं होती, केवल सजगता और सच्चाई चाहिए। यह इस बात पर निर्भर नहीं करती कि आप कितना जानते हैं, बल्कि इस पर कि आप कितनी गहराई से महसूस करते हैं।</p>
+      <p>बहुत लोगों के लिए आध्यात्मिकता की शुरुआत एक प्रश्न से होती है—“मैं कौन हूँ?” या “मैं इस संसार में क्यों आया हूँ?” ये प्रश्न केवल बुद्धि से नहीं, बल्कि हृदय से उत्पन्न होते हैं। जब हम किसी आनंदमयी क्षण में, किसी दुख की घड़ी में, या किसी शांत सुबह में अपने भीतर कुछ विशेष महसूस करते हैं—वह क्षण आध्यात्मिक होता है। वह सूर्यास्त की शांति हो सकती है 🌞, किसी प्रिय की मुस्कान हो सकती है, या किसी आंसू के बाद की खामोशी। ये क्षण हमें हमारे असली अस्तित्व से जोड़ते हैं।</p>
+      <p>आध्यात्मिकता हमें सिखाती है कि हम जीवन की तेज गति को धीमा करें, और हर पल को सचेत रूप से महसूस करें। यह हमें बाहर की ओर कम और अंदर की ओर अधिक देखने के लिए प्रेरित करती है। आध्यात्मिक जीवन जीने वाला व्यक्ति बाहरी चीज़ों के पीछे नहीं भागता, बल्कि अपने भीतर की शांति को पहचानता है। जीवन अब ‘और पाने’ की दौड़ नहीं रह जाता, बल्कि ‘जैसा है’ उसे पूरी तरह जीने की कला बन जाता है।</p>
+      <p>जब कोई व्यक्ति आध्यात्मिक होता है, तो वह अधिक दयालु, सहनशील और समझदार हो जाता है। वह अपने भीतर जिस ईश्वरीय प्रकाश को महसूस करता है, उसे हर प्राणी में देखने लगता है। घृणा, अहंकार और क्रोध धीरे-धीरे दूर हो जाते हैं—not क्योंकि वे जबरदस्ती हटाए जाते हैं, बल्कि क्योंकि अब उनकी आवश्यकता नहीं रहती। उनकी जगह आती है मौन, कृतज्ञता, नम्रता और जीवन के प्रति गहरा प्रेम।</p>
+      <p>यहां तक कि जब जीवन में कष्ट आता है, तब भी आध्यात्मिकता उस दुख को नकारती नहीं है। बल्कि, वह हमें उसे स्वीकार करने, उससे सीखने और उसे रूपांतरित करने की शक्ति देती है। आध्यात्मिकता हमारे घावों को ज्ञान में और हमारे निशानों को जीवन की गहराई में बदल देती है। इसलिए आध्यात्मिकता कोई विलासिता नहीं, बल्कि एक आवश्यक सहारा है, जो हमें एक अर्थपूर्ण जीवन जीने का मार्ग दिखाती है। यह हमें एक ऐसे संसार में स्थिर बनाती है, जो लगातार बदलता रहता है। यह याद दिलाती है कि सभी नामों, रूपों और पहचानों से परे, हम सभी शुद्ध चेतना हैं—जागरूक, सजीव और पूर्ण। 🌺</p>
+      <h2>विज्ञान की कहानी और प्रयोग ⚗️🧪</h2>
+      <p><strong>🔬 कहानी – पेनिसिलिन की खोज:</strong> 1928 में वैज्ञानिक अलेक्जेंडर फ्लेमिंग छुट्टी से लौटे तो उन्होंने अपनी प्रयोगशाला में एक अजीब चीज देखी। एक पैट्री डिश में अचानक फफूंदी (मोल्ड) उग आई थी, जिसने पास के बैक्टीरिया को मार दिया था। यह गलती एक चमत्कार में बदल गई। यह मोल्ड <em>पेनिसिलियम</em> था, जिससे दुनिया की पहली एंटीबायोटिक — पेनिसिलिन — बनी। इस खोज ने लाखों लोगों की जान बचाई। यह हमें सिखाती है कि वैज्ञानिक दृष्टिकोण से देखी गई छोटी बातें भी दुनिया बदल सकती हैं। 🧫🌍</p>
+      <p><strong>🧪 छोटा प्रयोग – पानी का वाष्पीकरण:</strong> दो गिलास पानी लें। एक को धूप में रखें और दूसरा ठंडी छाँव में। कुछ घंटों बाद देखेंगे कि धूप वाला गिलास तेजी से खाली हो रहा है। ऐसा इसलिए होता है क्योंकि गर्मी वाष्पीकरण (evaporation) को तेज कर देती है। यह प्रयोग हमें सिखाता है कि कैसे धूप और तापमान पानी के चक्र को प्रभावित करते हैं। ☀️💧</p>
+      <hr>
+      <h2>आध्यात्म की कहानी और अभ्यास ✨🌿</h2>
+      <p><strong>🌸 कहानी – बुद्ध और क्रोधित व्यक्ति:</strong> एक बार एक क्रोधित व्यक्ति बुद्ध के पास आया और उन्हें अपशब्द कहे। बुद्ध शांत रहे और पूछा, “अगर कोई तुम्हें कोई उपहार दे और तुम उसे न स्वीकारो, तो वह उपहार किसका रहता है?” व्यक्ति बोला, “देने वाले का।” बुद्ध मुस्कुराए और बोले, “मैं तुम्हारा क्रोध स्वीकार नहीं करता, यह तुम्हारे पास ही रहेगा।” यह कहानी सिखाती है कि आध्यात्मिक जागरूकता से हम शांति से प्रतिक्रिया देना सीख सकते हैं। 🕊️🙏</p>
+      <p><strong>🧘‍♂️ सरल अभ्यास – गायत्री मंत्र के साथ श्वास ध्यान:</strong> किसी शांत स्थान पर आराम से बैठें। आँखें बंद करें। धीरे-धीरे सांस लेते समय मन में गायत्री मंत्र का पहला भाग बोलें: <em>“ॐ भूर्भुवः स्वः”</em>। फिर धीरे-धीरे सांस छोड़ते समय अगला भाग बोलें: <em>“तत्सवितुर्वरेण्यं”</em>। हर सांस के साथ मंत्र को दोहराएं — अंदर लेते समय पहला भाग, बाहर छोड़ते समय दूसरा भाग। 🧘‍♀️🌬️🌼<br>यह अभ्यास मन को शांत करता है, ध्यान केंद्रित करता है और भीतर की ऊर्जा को जाग्रत करता है। केवल 5 मिनट का यह ध्यान भी आत्मिक शांति और स्पष्टता ला सकता है।</p>
+      <h2>विज्ञान और अध्यात्म का संबंध 🔬✨🕊️</h2>
+      <p>पहली नज़र में विज्ञान और अध्यात्म दो अलग-अलग रास्ते लगते हैं — एक तर्क पर आधारित, दूसरा आंतरिक अनुभव पर। लेकिन गहराई से देखने पर पता चलता है कि ये विरोधी नहीं, बल्कि एक-दूसरे के पूरक हैं। विज्ञान पूछता है <strong>“कैसे?”</strong>, और अध्यात्म पूछता है <strong>“क्यों?”</strong>। विज्ञान बाहरी ब्रह्मांड की खोज करता है, जबकि अध्यात्म भीतरी ब्रह्मांड की। 🌌🔍</p>
+      <p>आधुनिक भौतिकी यह बताती है कि ब्रह्मांड की हर चीज़ एक-दूसरे से जुड़ी हुई है — तारों से लेकर सूक्ष्म कणों तक। अध्यात्म भी यही सिखाता है कि सभी विविधताओं के पीछे एक ही सच्चाई छिपी है। दोनों ही मार्ग अलग तरीकों से हमें यथार्थ और अपने अस्तित्व की गहराई से पहचान कराते हैं।</p>
+      <p>वैज्ञानिक शोधों से यह साबित हुआ है कि ध्यान और प्रार्थना जैसे आध्यात्मिक अभ्यास मस्तिष्क को स्वस्थ रखते हैं, तनाव कम करते हैं, और भावनात्मक संतुलन लाते हैं। उसी प्रकार, कई वैज्ञानिक खोजें मौन, आत्म-चिंतन और प्रेरणा से जन्म लेती हैं — जो आध्यात्मिकता की देन हैं।</p>
+      <p>⚖️ एक संतुलित जीवन में विज्ञान की स्पष्टता और अध्यात्म की गहराई दोनों आवश्यक हैं। साथ मिलकर ये हमें ज्ञान, करुणा और जीवन के प्रति एक गहरा जुड़ाव प्रदान करते हैं।</p>
+      <h2>💡 थॉमस एडिसन की अटूट लगन की कहानी 🌟</h2>
+      <p>आज ही के दिन 1880 में थॉमस अल्वा एडिसन को बिजली के बल्ब का पेटेंट मिला था — एक ऐसा आविष्कार जिसने पूरी दुनिया को रोशन कर दिया। लेकिन इस आविष्कार के पीछे छिपी है एक अद्भुत लगन और संघर्ष की कहानी। एडिसन ने बल्ब बनाने में हजार बार असफल होने के बावजूद हार नहीं मानी।</p>
+      <p>बचपन में उन्हें मंदबुद्धि कहकर स्कूल से निकाल दिया गया था। लेकिन अपनी कड़ी मेहनत और आत्मविश्वास के बल पर उन्होंने बल्ब समेत हजारों ऐसे आविष्कार किए जो मानव जीवन को और आसान बना गए।</p>
+      <p>कहा जाता है कि एडिसन ने बल्ब का फिलामेंट बनाने के लिए दो हजार अलग-अलग वस्तुओं पर प्रयोग किया था। जब एक पत्रकार ने उनसे पूछा कि हजार बार असफल होने के बाद कैसा महसूस हो रहा है, तो एडिसन ने जवाब दिया — “मैं हजार बार असफल नहीं हुआ, बल्कि मैंने हजार ऐसे तरीके खोज लिए जो काम नहीं करते।”</p>
+      <p class="highlight">ऊपर दी गई थॉमस अल्वा एडिसन की कहानी में, हम विज्ञान और अध्यात्म दोनों को देख सकते हैं। विज्ञान में हम थॉमस अल्वा एडिसन के आविष्कार को देख सकते हैं, जहाँ वे 1000 से ज़्यादा बार असफल हुए, और एक सफल प्रयास ही विज्ञान का आविष्कार था।<br>अब आध्यात्मिकता की बात करें तो थॉमस अल्वा एडिसन 1000 बार असफल रहे, लेकिन उन्होंने हार नहीं मानी, उन्होंने तब तक कोशिश की जब तक कि वे सफल नहीं हो गए। यही उनकी आध्यात्मिकता थी। यहाँ तक कि जब एक पत्रकार ने उनसे उनके 1000 असफल प्रयासों के बारे में पूछा, तो उन्होंने कहा कि वे 1000 बार असफल नहीं हुए, बल्कि उन्होंने 1000 ऐसे आविष्कार किए जो काम नहीं करते।<br>थॉमस अल्वा एडिसन की आध्यात्मिकता की एक और कहानी उनके स्कूल के समय की है, जब उन्हें स्कूल से निकाल दिया गया था और मां को एक पत्र भेजा था कि उनका बेटा मूर्ख और बेकार है, जब उनकी मां ने वह पत्र पढ़ा तो वह रो पड़ीं और जब थॉमस अल्वा ने अपनी मां को रोते हुए देखा तो उन्होंने अपनी मां से पूछा कि वह क्यों रो रही हैं और उनकी मां ने कहा कि वह इतने बुद्धिमान हैं कि स्कूल में कोई भी शिक्षक उनके स्तर से मेल नहीं खा सकता, उनकी मां की आध्यात्मिकता थी, अगर उनकी मां ने सच कहा होता तो वह उतने महान नहीं होते जितने कि वह हैं और शायद हमें अब तक बल्ब नहीं मिला होता, यह आध्यात्मिकता की शक्ति है।</p>
+      <h2>🧬 वैज्ञानिक आध्यात्मिकता 🔱</h2>
+      <h3>🕉️ गायत्री मंत्र पर डॉ. होवर्ड स्टिएनगेरिल का शोध</h3>
+      <p>अमेरिकी वैज्ञानिक <strong>डॉ. होवर्ड स्टिएनगेरिल</strong> ने दुनियाभर के मंत्र, भजन और मंगलाचरणों का अपनी शरीर विज्ञान की प्रयोगशाला में गहन परीक्षण करने के बाद <strong>गायत्री मंत्र</strong> को विश्व की सबसे प्रभावशाली प्रार्थना घोषित किया है। उन्होंने पाया कि गायत्री मंत्र प्रति सेकंड <strong>१,१०,००० ध्वनि तरंगें</strong> उत्पन्न करता है, जो सभी भजनों में सबसे ज्यादा हैं।</p>
+      <p>उन्होंने यह भी पाया कि गायत्री मंत्र में विभिन्न <strong>आवृत्तियों (frequencies)</strong> के मिश्रण से विशेष <strong>आध्यात्मिक शक्तियों</strong> को विकसित करने की क्षमता विद्यमान है।</p>
+      <img id="myImageHi" src="https://i.ibb.co/jk2QnvtV/devta.jpg" alt="Deity" style="width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+      <div class="button-container">
+        <button class="orange-button" onclick="document.getElementById('myImageHi').src='https://i.ibb.co/jk2QnvtV/devta.jpg'">पिछला</button>
+        <button class="orange-button" onclick="document.getElementById('myImageHi').src='https://i.ibb.co/tP8Mt2xM/scienceissprituality.jpg'">अगला</button>
+      </div>
+      <h2>🕉️ वैज्ञानिक अध्यात्म</h2>
+      <img src="https://i.ibb.co/SDwdxS8s/tragisgas-hindi.jpg" alt="Scientific Spirituality">
+     
+      <div class="conclusion">
+        <h2>💡 निष्कर्ष 🌟</h2>
+        🌟 <strong>निष्कर्ष:</strong> विज्ञान और अध्यात्म का मिलन हमें यह सिखाता है कि सत्य बाहर भी है और भीतर भी। विज्ञान बाहरी दुनिया को उजागर करता है, जबकि अध्यात्म हमें आंतरिक यात्रा कराता है। दोनों मिलकर मानव जीवन को संपूर्ण बनाते हैं और हमें ज्ञान, करुणा और ब्रह्मांड के साथ एकता की ओर ले जाते हैं। 🌍✨
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.getElementById(`lang-${lang}`).classList.add('active');
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Load saved language preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+      document.getElementById('languageSelect').value = savedLang;
+      switchLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>
